@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+/* @theme {
+  colors: {
+    primary: "#2b86ff",
+    secondary: #3f863e,
+  }
+} */
+
 @layer base {
   html {
     font-family: sans-serif;
@@ -12,4 +19,11 @@
 }
 
 @layer components {
+  .input-box {
+    @apply w-full text-sm bg-transparent border-[1.5px] px-5 py-3 rounded mb-4 outline-none;
+  }
+
+  .btn-primary {
+    @apply w-full text-sm text-white p-2 rounded my-1 hover:bg-blue-600;
+  }
 }
