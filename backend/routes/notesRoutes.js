@@ -1,10 +1,13 @@
 import express from 'express'
+import { authLogin, createNote } from '../controllers/notesController.js'
 const router = express.Router()
 
-router.get()
+router.post("/login", authLogin)
 
-router.post()
+router.post("/create-account", createNote)
 
 router.put()
 
 router.delete()
+
+export default router
